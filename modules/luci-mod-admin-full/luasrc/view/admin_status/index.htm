@@ -109,7 +109,7 @@
 
 <%+header%>
 
-<script type="text/javascript" src="<%=resource%>/cbi.js"></script>
+<script type="text/javascript" src="<%=resource%>/cbi.js?v=git-18.296.11678-2bbc1e3"></script>
 <script type="text/javascript">//<![CDATA[
 	function progressbar(v, m)
 	{
@@ -217,7 +217,7 @@
 				ss.innerHTML = String.format('<small>%s</small>', s);
 				si.innerHTML = String.format(
 					'<img src="<%=resource%>/icons/ethernet.png" />' +
-					'<br /><small><a href="%s">%s</a></small>',
+					'<br /><small><a href="#">eth0.2</a></small>',
 						ifc.link, ifc.ifname
 				);
 			}
@@ -677,13 +677,8 @@
 	<legend><%:System%></legend>
 
 	<table width="100%" cellspacing="10">
-		<tr><td width="33%"><%:Hostname%></td><td><%=luci.sys.hostname() or "?"%></td></tr>
-		<tr><td width="33%"><%:Model%></td><td><%=pcdata(boardinfo.model or "?")%></td></tr>
-		<tr><td width="33%"><%:Architecture%></td><td><%=pcdata(boardinfo.system or "?")%></td></tr>
-		<tr><td width="33%"><%:Firmware Version%></td><td>
-			<%=pcdata(ver.distname)%> <%=pcdata(ver.distversion)%> /
-			<%=pcdata(ver.luciname)%> (<%=pcdata(ver.luciversion)%>)
-		</td></tr>
+		<tr><td width="33%"><%:Hostname%></td><td>TopSpeedVPN</td></tr>
+		<tr><td width="33%"><%:Model%></td><td>TopSpeedVPN路由器家用版 Ver1.1</td></tr>
 		<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>
 		<tr><td width="33%"><%:Local Time%></td><td id="localtime">-</td></tr>
 		<tr><td width="33%"><%:Uptime%></td><td id="uptime">-</td></tr>

@@ -255,7 +255,7 @@ msgid "Address to access local relay bridge"
 msgstr "接入本地中继桥的地址"
 
 msgid "Administration"
-msgstr "管理权"
+msgstr "修改密码"
 
 msgid "Advanced Settings"
 msgstr "高级设置"

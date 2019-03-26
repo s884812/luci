@@ -23,15 +23,15 @@ function index()
 				return false
 			end)
 
-		if has_switch then
-			page  = node("admin", "network", "vlan")
-			page.target = cbi("admin_network/vlan")
-			page.title  = _("Switch")
-			page.order  = 20
+		--if has_switch then
+		--	page  = node("admin", "network", "vlan")
+		--	page.target = cbi("admin_network/vlan")
+		--	page.title  = _("Switch")
+		--	page.order  = 20
 
-			page = entry({"admin", "network", "switch_status"}, call("switch_status"), nil)
-			page.leaf = true
-		end
+		--	page = entry({"admin", "network", "switch_status"}, call("switch_status"), nil)
+		--	page.leaf = true
+		--end
 
 
 		local has_wifi = false
